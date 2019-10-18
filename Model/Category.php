@@ -69,9 +69,7 @@ class Category
 
 
     function deldata($connection,$id){
-        
-  $sq = "UPDATE products SET category_id=0 WHERE category_id=$id";
-        $connection->exec($sq);
+ 
         $sql="DELETE FROM categories WHERE id=$id";
 
            return $connection->exec($sql);
